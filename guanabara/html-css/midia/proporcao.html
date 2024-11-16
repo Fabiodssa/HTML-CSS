@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIDIA</title>
+    
+</head>
+<body>
+    <h1>imagem fexivel</h1>
+    <picture>
+        <source media="(max-width: 750px)" srcset="tamanhosimag/pequena.png" sizes="imagem">
+        <source media="(max-width: 1050px)" srcset="tamanhosimag/mediaa.png" sizes="imagem">
+        <img src="tamanhosimag/grande.png" alt="imagem fexivel">
+    </picture>
+    
+    <h1>audio</h1>
+    <audio controls src="audios/Helium - TrackTribe.mp3"></audio>
+    <audio autoplay loop src="audios/Little Umbrellas - TrackTribe.mp3"></audio>
+
+    <h1>videos</h1>
+    <video autoplay controls width="700" src="video/campo_1280_720_30fps.mp4"></video>
+    <h2>video incorporado do youtube</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/WRxwtV_x8nM?si=yBp_RXZW1_2IOUhF&amp;start=20" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</body>
+</html>

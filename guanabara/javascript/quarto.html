@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            background: burlywood;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>iniciando no DOM</h1>
+    <p>Aqui nos temos o primeiro <strong>Paragrafo</strong></p>
+    <p>segundo paragrafo</p>
+    <p><input type="submit" value="Enviar"></p>
+    <div class="msg"> clique aqui </div>
+    <script> 
+        var p1 = document.getElementsByTagName('p')[0] 
+        document.write('Esta escrito assim: '+ p1.innerText) // innerText pega a informção sem a formatação, para tasferriri fomatado deve-se uilizar innerHTML
+        
+     //  window.alert(p1.innerHTML)
+        var d = window.document.querySelector('div.msg')
+        d.style.background='blue'
+    </script>
+    
+</body>
+</html>

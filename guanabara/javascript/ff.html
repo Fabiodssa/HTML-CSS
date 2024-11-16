@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+<h1>Formulário</h1>
+<fieldset>
+    <form method="post" action="cadatro.js" autocomplete="off"> <!-- method="post": esconde os dados na URL **action="cadatro.js": direciona para outra pagina** autocomplete="off": desativa o preenchimento automatico -->
+    <p><label for="inome">nome:</label>  
+        <input type="text" name="nome" id="inome" required></p>
+
+    <p><label for="isobre">sobrenome:</label>
+        <input type="text" name="sobrenome" id="isobre" required></p>
+    <input type="submit" value="enviar">
+</fieldset>
+<fieldset>
+    <p><label for="uso">Usuario:</label> 
+    <input type="text" name="Usuario" id="uso" placeholder="Usuario" required></p>
+
+    <p><label for="isenha">Senha:</label>
+    <input type="password" name="senha" id="isenha" placeholder="Senha" required minlength="6"></p>
+
+    <input type="reset" value="apagar">
+    <input type="submit" value="enviar">
+</fieldset>
+<fieldset>
+    <p><label for="imedia">Média</label>
+    <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1"></p>
+    <p><label for="imes">mes</label> <input type="month" name="mes" id="imes"></p>
+    <p><label for="idata">Data</label> <input type="date" name="Data" id="idata"></p>
+    <p><label for="ihora">Hora</label> <input type="time" name="Hora" id="ihora"></p>
+    <input type="submit" value="enviar">
+</fieldset>   
+<fieldset >
+    <legend>Contato</legend>
+    <p><label for="iemail">Email</label>
+    <input type="email" name="email" id="iemail"></p>
+    <p><label for="itel">Telefone</label>
+    <input type="tel" name="telefone" id="itel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxx-xxxx">
+    <p><input type="submit" value="enviar" ></p>
+</fieldset>
+<fieldset>
+    <legend>Sexo</legend>
+    <p><label for="mas">Masculino</label> <input type="radio" name="sexo" id="mas"></p>
+    <p><label for="fem">Feminino</label><input type="radio" name="sexo" id="fem"></p>
+</fieldset>
+<fieldset>
+    <legend>Esporte</legend>
+    <label for="bas">Basquete</label> <input type="checkbox" name="Basquete" id="bas"><br>
+    <label for="fut">Futebol</label> <input type="checkbox" name="Futebol" id="fut"> <br>
+    <label for="ten">Tenis</label> <input type="checkbox" name="tenis" id="ten"><br>
+    <label for="vol">Volei</label> <input type="checkbox" name="volei" id="vol"><br>
+    <label for="han">Handebol</label> <input type="checkbox" name="Handebol" id="han"><br>
+</fieldset>
+<fieldset>
+    <legend>cor, nivel e file</legend>
+    <label for="icor">escolha uma cor</label>
+    <input type="color" name="cor" id="icor" value="#00ff00">
+    <p><label for="inivel">nivel de sastifação</label><input type="range" name="nivel" id="inivel"></p>
+    <p><label for="file">asicionar arquivo</label><input type="file" name="arquivo" id="file"></p> <!--method tem que ser "post"-->
+</fieldset>
+<fieldset>
+    <legend>seleção</legend>
+    <label for="iestado">Estado</label>
+    <select name="Estado" id="iestado">
+        <optgroup label="Nordeste">
+        <option value="" selected>--selecionar--</option>
+        <option value="BA">Bahia</option>
+        <option value="AL">Alagoas</option>
+        <option value="CE">Ceará</option>
+        <option value="MA">Maranhão</option>
+        <option value="PB">Paraiba</option>
+        </optgroup>
+        <optgroup label="Sul">
+        <option value="PR">Paraná</option>
+        <option value="SC">Santa Catarina</option>
+        <option value="RS">Rio Grande do Sul</option>
+        </optgroup>
+    </select>
+    <p><label for="ipro">Profissão</label>
+    <input type="text" name="profissao" id="ipro" list="prolis">
+    <datalist id="prolis">
+        <option> Adiministração</option>
+        <option>contabilidade</option>
+        <option>Desenvolvdor</option>
+        <option>Professor</option>
+    </datalist></p>
+    <p><label for="msg">Mensagem</label><br>
+    <textarea name="mensagem" id="msg" cols="30" rows="10"></textarea></p>
+</fieldset>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+@charset "UTF-8";
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    body{
+        /*background-image:  url(ponte.jpg);
+        background-repeat:  no-repeat;
+        background-size: cover;*/
+        background-image: linear-gradient(to right,#048C8c,#011640);
+    }
+    .cont{              /*centralizar div*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vm;
+        height: 90vh;
+    }
+
+    main{
+        background-color: #F2CA99;
+        border-radius: 10px;
+        box-shadow: 20px 20px 30px #010D26;
+        margin:auto;
+        width: 600px;
+        padding: 10px;
+    }
+
+    h1{
+        box-shadow: 5px 5px 15px black;
+        background-color: #F26938;
+        text-align: center;
+        border-radius: 10px;
+        margin-left: 150px;
+        margin-right: 150px;
+        padding: 5px; 
+        
+
+    }
+    h2{
+        color:#011640 ;
+    }

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos dom</title>
+    <style>
+        body{
+            background: rgb(187, 226, 129);
+        }
+        P{
+            background: blue;
+            height:200px;
+            width: 200px;
+            text-align:center;
+            line-height: 200px;
+            border-radius: 50%;
+        }
+        #cont{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vm;
+            height: 90vh;
+        }
+        #menu{
+            background: white;
+            width: 100px;
+            height: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="menu" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">Clique aqui</div> <!--//////// a interação sera feita aqui-->
+    <div id="cont">
+    <P id="interacao">intejara...</P></div> <!--a interação ira acontecer aqui-->
+
+    
+    <script>
+        var a=window.document.getElementById('interacao')
+       // a.addEventListener('click',clicar) // outra maneira de fazer
+      //  a.addEventListener('mouseenter', entrar) 
+      //  a.addEventListener('mouseout', sair) 
+        function clicar(){
+            a.innerText='clicou!'
+            a.style.background='red'
+        }
+        function entrar(){ 
+            a.innerText='entrou!'
+            a.style.color='white'
+        }
+        function sair(){
+            a.innerText='saiu!'
+            a.style.background='blue'
+        }
+    </script>
+</body>
+</html>

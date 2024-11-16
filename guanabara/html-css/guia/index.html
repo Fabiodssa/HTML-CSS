@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+        mark{
+            color: blue;
+            background-color: white;
+        }
+
+        #tela{
+            width: 95vw;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hola mundo!!</h1>
+    <hr>
+    <p>testando essa bagaça</p> 
+    <hr>
+    <P>para criar um paragrafo deveremos utilizar as seguintes tags &lt;p&gt;conteudo&lt;/p&gt;</P>
+    <p>para adicionar uma quebra de linha utiliazamos o &lt;br&gt;.</p>  
+    <p>vamou adicionar emojis: &#x1F60D &#x1F49E &#x1F48C --- </p>
+    <h1>Adicionar imagem</h1>   
+    <img src="logo-html.png" alt="logo html">
+    <img src="CSS3_logo.png" alt="logo css3">
+    <img src="Simbolo-Engenharia-Computacao.png" alt="logo de Engenharia">
+    <p>chamando imagem da internet:</p>
+    <img src="https://www.globalcloudteam.com/wp-content/uploads/2023/08/javascript.webp" alt="java">
+    
+    <h2>algumas tags</h2>
+    <p>eu moro na rua<address>emiliano galina, ba</address></p><!--adicionar marca de endereço-->
+    <p>o <u>cabeça de porco</u></p> <!--subilinhar(evitar o uso, pode parar de funcionar)-->
+    <p><marquee behavior="" direction="right"> animacion</marquee></p> <!-- animação da palafra para a direita(evitar uso)-->
+
+    <h2>formatação de texto</h2>
+    <p>aqui nos temaos uma palavra em <b>negrito</b>. apenas escurece</p>
+    <p>aqui temos outra farase em <strong>negrito</strong>. a palavra toma um sentido forte</p>
+    <p>aqui temos um termo em <i>italico</i></p>
+    <p>aqui temos um termo <em>italico</em> com semantica(significado)</p>
+    <p>aqui podemos usar a teg "MARK" <mark>para marcar uma frase</mark></p>
+    <p>aqui temos letras <big>grandes</big> e letras <small>pequenas</small></p>
+    <P>aqui temos a tag para riscar uma frase <del>foi um erro ter feio isso</del></P>
+    <p>aqui podemos "inserrir" (marcar com uma linha) <Ins>uma frase</Ins></p>
+    <p>aqui podemos inserir fomulas: X<sup>3</sup>+2</p>
+    <p>aqui podemos inserimos formulas: H<SUb>2</SUb>O</p>
+
+    <h2>outras formatações</h2>
+    <p>aqui utiliza para padronizar o tamnaho das letras (na lateral): <code>document.grtEletronicByID</code></p>
+    <h3>aqui tudo que é digitado no código é passado com a mesma formatação para o site</h3>
+    <pre>
+        ola eu
+        sou eu
+        e tu
+        não sou eu
+    </pre>
+
+    <h2>citaçoões</h2>
+    <p>como diria um pai de um amigo: <q>o computador é um burro muito rápido</q></p>
+    <p>como diria o famoso cantor brasieliro, BK</p>
+    <blockquote cite="https://www.letras.mus.br/luccas-carlos/musica-de-amor-nunca-mais-part-bk/"><pre>
+        Músicas de amor nunca mais, bebê
+        Músicas de amor nunca mais
+        Você pede e me espera
+        Mas a vida acelera
+        O sorriso a dor leva
+        Com fé, o tempo traz</pre>
+    </blockquote>
+    <p>aqui o significado das abreviações aparecem quando o mouse passa: <abbr title="BAHIA">BA</abbr>, <abbr title="Rio de janeiro">RJ</abbr></p>
+    <p><B>qui inverte as frase: </B>a<bdo dir="rtl"> eu sou o rei do mndo e não tem ninguem melhor</bdo> <br> <bdo dir="ltr">ja esse aqui é inutil mesmo</bdo></p>
+
+    <h1>listas</h1>
+    <h2>listas ordenadas</h2>
+    <ol start="5">
+        <li>acordae</li>
+        <li>escovar os dente</li>
+        <li>tomar banho</li>
+        <li>tomar café</li>
+    </ol>
+    <ol type="A">
+        <li>acordae</li>
+        <li>escovar os dente</li>
+        <li>tomar banho</li>
+        <li>tomar café</li>
+    </ol>
+    <ul type="circle">
+        <li>acordar</li>
+        <li>tomar banho</li>
+        <li>tomar banho</li>
+        <li>partio cafe</li>
+    </ul>
+     <h2>listas dentro de listas</h2>
+        <ol>
+            <li>bebidas</li>
+            <ol type="a">
+                <li>coca</li>
+                <li>pepsi</li>
+                <li>cerveja</li>
+                <li>fanta</li>
+            </ol>
+            <li>comidas</li>
+            <ol type="A" start="5">
+                <li>coxinha</li>
+                <li>carne</li>
+                <li>farofa</li>
+            </ol>
+        </ol>
+
+        <h2>litas não ordenadas</h2>
+        <ul type="circle">
+            <li>bebidas</li>
+            <ol type="a">
+                <li>coca</li>
+                <li>pepsi</li>
+                <li>cerveja</li>
+                <li>fanta</li>
+            </ol>
+            <li>comidas</li>
+            <ol>
+                <li>coxinha</li>
+                <li>carne</li>
+                <li>farofa</li>
+            </ol>
+        </ul>
+
+        <h1>lista de definição</h1>
+        <dl>
+            <dt>diodo</dt>
+            <dd>componete eletronico com treis terminas, chaveador e aplificador</dd>
+            <dt>capacitor</dt>
+            <dd>componete capaz de armazenar energia e liberar no circuido, tambem utilizado como filtro</dd>
+        </dl>
+
+        <h1>link e navegção</h1>
+        <p>escute essa musica: <a href="https://youtu.be/LbzNGddubK4?si=7TYQmCdU8Uq5U3DF" target="_blank" rel="external">L7NNON-ligação estranha</a></p>
+
+        <h1>navegação com links internos</h1>
+        <p>aqui vc pode acessar outras paginas navegando: <a href="navega.html">proxima pagina</a></p>
+        <h2>link para downlooad</h2>
+        <ul>
+            <li>sim meu pit, baixe aqui: <a href="pdf/Tormenta20.pdf" download="Tormenta20">Tormenta 20</a> </li>
+            <li>sim meu pit, baixe aqui: <a href="pdf/Tormenta20.pdf" download="Tormenta20" type="appication7pdf">Tormenta 20</a>(MIDIA TYPE) </li> 
+            <li>sim cabeça, baixe aqui: <a href="pdf/pensão.pdf" download="pensão">Documento</a></li>
+        </ul>
+
+        <h1>formes</h1>
+     <form>
+        <label for="nome">nome</label> <input type="text" id="nome" placeholder="loguin" required><br>
+        <label for="senha">senha</label><input  type="password" id="senha" placeholder="senha" required><br>
+        <input type="range"><br>
+        <label for="email">email</label><input type="email" id="email" placeholder="email"required> <br>
+        <label for="numero">numero</label> <input type="number"  id="numero"> <br>
+        <label for="celular">celular</label> <input type="tel"  id="celular" placeholder="celular" required> <br>
+        <label for="tempo">tempo</label><input type="time" id="tempo">
+        <label for="data">data</label><input type="date" id="data"> <br> 
+
+        <input type="checkbox">1 
+        <input type="checkbox">2 
+        <input type="checkbox">3 <br>
+
+        <input type="radio" name="valor">1 
+        <input type="radio" name="valor">2 
+        <input type="radio" name="valor">3
+        
+        <p><button>clique aqui</button></p>
+    </form>
+    <p>Aqui nós temos o Iframe: <iframe src="https://www.cursoemvideo.com" frameborder="0"> <a href="https://www.cursoemvideo.com" target="_blank">curso em video</a></iframe></p>
+    <h2>Navegação iframe</h2>
+    <li><a target="frame" href="https://brasilescola.uol.com.br/noticias/edital-do-concurso-publico-nacional-unificado-2024-e-publicado/3129948.html">pagina 1</a></li>
+    <li><a target="frame" href="https://landing.unifacs.br/cursos?busca=ads"> pagina 2</a></li>
+    <li><a target="frame" href="https://inscricao.ucsal.br/graduacao-presencial/analise-e-desenvolvimento-de-sistemas/"> pagina 3</a></li>
+
+    <iframe id="tela" name="frame" src=""> navegador não cpmpativel</iframe>
+ </body>
+
+</html> 

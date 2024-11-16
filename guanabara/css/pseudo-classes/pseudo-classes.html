@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes</title>
+    <style>
+        div{
+            background-color: rgb(138, 129, 129);
+            border: 1px solid black;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            display:inline-block;
+        }
+        div:hover{
+            background-color: greenyellow;
+
+        }
+/*.......................................................................*/
+        #tes{
+            width: 200px;
+            height: 20px;
+            border-radius: 10px;
+        }
+        #tes:hover{
+            height: 150px;
+            color: brown;
+        }
+        #tes>p{               /* o paragrafo se esconde dentro da div*/
+            display:none ;
+        }
+        #tes:hover p{           /*o mousse mostra o que tava escondido*/
+            display:block;
+        }
+/*..............................................................................*/
+        a{
+            color: brown;
+            text-decoration: none;
+
+        }
+        a:visited{              /* quando o link foi visitado muda de cor*/
+            color: darkblue;
+        }
+        a:hover{
+            color:black;
+            text-decoration: underline; 
+        }
+        a:active{                   /*quando clicamuda de cor*/
+            color: aquamarine;
+        }
+        a::after{
+            content: ' ♬';
+        }
+        a::before{
+            content: '❤ ';
+        }
+
+        li::before{
+            content: '☛';
+        }
+    </style>
+</head>
+<body>
+    <div>um</div>
+    <div>dois</div>
+    <div>três</div>
+
+    <h1>exemplo de hover</h1>
+    <p>passe o mousse embaixo</p>
+    <div id="tes">passe o mousse aqui <p>coisas secretas que ninguem vai ficar sabendo</p></div>
+
+    <h1>teste com links</h1>
+    <ul>
+        <li><a href="https://youtu.be/fHZrpZoxcpc?si=dKD0-JRzZdyCBWo3" target="_blank">Kyan</a></li>
+        <li><a href="https://youtu.be/uFsGu8QaS4o?si=U52kLjnyR1FENANl">Dfideliz</a></li>
+        <li><a href="https://youtu.be/a3VZMY3TNIg?si=C6beh1Li_X4MxhGd">Jotapê</a></li>
+    </ul>   
+</body>
+</html>
